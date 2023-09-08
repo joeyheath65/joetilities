@@ -7,8 +7,8 @@ os.system('clear')
 print()
 print("        ********************************************************************\n"
       "        **                                                                **\n"      
-      "        **            W E L C O M E  TO  J O E T I L I T I E S!           **\n"
-      "        **                                                                **\n"
+      "        **             W E L C O M E  TO  N E T I L I T I E S!            **\n"
+      "        **                      from Joetilities :)                       **\n"
       "        **                  ---> M A I N  M E N U <---                    **\n"
       "        **                                                                **\n"
       "        ********************************************************************\n")
@@ -19,35 +19,29 @@ time.sleep(5)
 print()
 def show_menu():
     print("    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n"
-          "    *                    J O E T I L I T I E S!                       *\n"
+          "    *                     N E T I L I T I E S!                        *\n"
           "    *                       M A I N  M E N U                          *\n"
-          "    *            Please select a Joetility to run from                *\n"
+          "    *            Please select a Netility to run from                 *\n"
           "    *             the menu below and enjoy the magic!                 *\n"
           "    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n")
     print()
-    print("     1. Joe's Site Reachability Checker")
+    print("     1. Joe's Network Usage Checker")
     print("     2. Joe's Web Scraper")
     print("     3. Joe's Desktop Cleaner Upper")
     print("     4. Joe's CSV differ")
-    print("     5. Joe's Network Usage Checker")
-    print("     6. Joe's Single Site Checker")
     print("     9. Exit")
     print()
     
 # menu choices here, add elif statement for more choices
 def run_script(choice):
     if choice == "1":
-        os.system("python3 joetilities/scripts/reachable.py")
+        os.system("python3 joetilities/netilities/netusage.py")
     elif choice == "2":
-        os.system("python3 joetilities/scripts/sitescrape.py")
+        os.system("python3 joetilities/sitescrape.py")
     elif choice == "3":
-        os.system("python3 joetilities/scripts/desktopclear.py")
+        os.system("python3 joetilities/desktopclear.py")
     elif choice == "4":
-        os.system("python3 joetilities/scripts/csv_diff.py")
-    elif choice == "5":
-        os.system("python3 joetilities/scripts/netusage.py")        
-    elif choice == "6":
-        os.system("python3 joetilities/scripts/sitetest.py")    
+        os.system("python3 joetilities/csv_diff.py")    
 
 def main():
     while True:
