@@ -1,11 +1,11 @@
-from multiping import MultiPing
+import os
+import ipaddress
 
-# Create a MultiPing object to test three hosts / addresses
-mp = MultiPing(["8.8.8.8", "youtube.com"])
+host = ipaddress.ip_address(input("What host: "))
 
-# Send the pings to those addresses
-mp.send()
-
-# With a 1 second timout, wait for responses (may return sooner if all
-# results are received).
-responses, no_responses = mp.receive(1)
+for ip in host:
+    response = os.popen(f"ping -c 4 {ip} ")
+    
+    if("Request timed out." or "unreachable") in response:
+        print(response)
+        

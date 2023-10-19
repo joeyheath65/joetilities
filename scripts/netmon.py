@@ -25,7 +25,7 @@ print("        ******                --> USAGE  NOTE <--                     ***
 
 time.sleep(1)
 
-FILE = os.path.join(os.getcwd(), "/Users/joehome/Documents/GitHub/joetilities/log/netinfo.log")
+FILE = os.path.join(os.getcwd(), "/Users/h424275/Documents/Coding/Scripts/netinfo.log")
 
 # creating log file in the currenty directory
 # ??getcwd?? get current directory,

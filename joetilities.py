@@ -5,25 +5,25 @@ os.system('clear')
 
 # copy and paste this in the header of each script
 print()
-print("        ********************************************************************\n"
-      "        **                                                                **\n"      
-      "        **            W E L C O M E  TO  J O E T I L I T I E S!           **\n"
-      "        **                                                                **\n"
-      "        **                  ---> M A I N  M E N U <---                    **\n"
-      "        **                                                                **\n"
-      "        ********************************************************************\n")
+print("        **********************************************************************************************************\n"
+      "        **                                                                                                      **\n"      
+      "        **                                   W E L C O M E  TO  J O E T I L I T I E S!                          **\n"
+      "        **                                                                                                      **\n"
+      "        **                                          ---> M A I N  M E N U <---                                  **\n"
+      "        **                                                                                                      **\n"
+      "        **********************************************************************************************************\n")
 print()
 
 
-time.sleep(5)
+time.sleep(3)
 print()
 def show_menu():
-    print("    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n"
-          "    *                    J O E T I L I T I E S!                       *\n"
-          "    *                       M A I N  M E N U                          *\n"
-          "    *            Please select a Joetility to run from                *\n"
-          "    *             the menu below and enjoy the magic!                 *\n"
-          "    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n")
+    print("    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n"
+          "    *                                     J O E T I L I T I E S!                                *\n"
+          "    *                                        M A I N  M E N U                                   *\n"
+          "    *                              Please select a Joetility to run from                        *\n"
+          "    *                               the menu below and enjoy the magic!                         *\n"
+          "    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n")
     print()
     print("     1. Joe's Site Reachability Checker")
     print("     2. Joe's Web Scraper")
@@ -37,17 +37,17 @@ def show_menu():
 # menu choices here, add elif statement for more choices
 def run_script(choice):
     if choice == "1":
-        os.system("python3 joetilities/scripts/reachable.py")
+        os.system("python3 scripts/reachable.py")
     elif choice == "2":
-        os.system("python3 joetilities/scripts/sitescrape.py")
+        os.system("python3 scripts/sitescrape.py")
     elif choice == "3":
-        os.system("python3 joetilities/scripts/desktopclear.py")
+        os.system("python3 scripts/desktopclear.py")
     elif choice == "4":
-        os.system("python3 joetilities/scripts/csv_diff.py")
+        os.system("python3 scripts/csv_diff.py")
     elif choice == "5":
-        os.system("python3 joetilities/scripts/netusage.py")        
+        os.system("python3 scripts/netusage.py")        
     elif choice == "6":
-        os.system("python3 joetilities/scripts/sitetest.py")    
+        os.system("python3 scripts/sitetest.py")    
 
 def main():
     while True:
